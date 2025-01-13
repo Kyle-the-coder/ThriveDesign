@@ -6,7 +6,6 @@
   padding: 5px 10px;
   z-index: 9;
 
-  /* Background */
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.15),
@@ -15,13 +14,10 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  /* Border and Shadow */
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 12px 32px rgba(0, 0, 0, 0.25),
-    /* Slightly reduced main shadow intensity */ inset -2px -2px 5px
-      rgba(255, 255, 255, 0.3); /* Brightened inset shadow */
+    inset -2px -2px 5px rgba(255, 255, 255, 0.3);
 
-  /* Rounded Corners */
   border-radius: 100px;
 
   position: absolute;
@@ -31,8 +27,8 @@
 }
 
 .logo-img {
-  width: clamp(70px, 8vw, 110px);
-  height: clamp(70px, 8vw, 110px);
+  width: clamp(30px, 8vw, 90px);
+  height: clamp(30px, 8vw, 90px);
   border-radius: 50%;
 }
 
@@ -45,7 +41,7 @@
 
 .link {
   margin: 0;
-  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-size: clamp(1.2rem, 3vw, 2.8rem);
 
   cursor: pointer;
   transition: all 0.3s;
