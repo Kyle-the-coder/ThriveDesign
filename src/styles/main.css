@@ -10,3 +10,14 @@ body {
   margin: 0 auto;
   position: relative;
 }
+
+@font-face {
+  font-family: "Font1";
+  src: url("./Kanit-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font1 {
+  font-family: "Font1", sans-serif;
+}
