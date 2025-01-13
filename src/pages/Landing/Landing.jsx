@@ -1,9 +1,9 @@
-import landingBg from "../../assets/AbstractPlay.jpg";
+import { Hero } from "../../components/Hero/Hero";
 import "./landing.css";
 function Landing() {
   return (
     <div className="landing-mc">
-      <img src={landingBg} className="landing-bg" />
+      <Hero />
     </div>
   );
 }

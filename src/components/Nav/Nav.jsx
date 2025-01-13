@@ -13,7 +13,7 @@ export function Nav() {
       <div className="nav-links-container">
         {links.map((link, index) => {
           return (
-            <h3 key={link.linkName} className="font1 link">
+            <h3 key={link.linkName} className="font1 blockText link">
               {link.linkName}
             </h3>
           );
