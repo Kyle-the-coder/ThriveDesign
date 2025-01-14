@@ -79,11 +79,10 @@ p {
   h1 {
     font-size: 5rem;
     line-height: 1.2;
-    font-weight: 300;
   }
 
   .hero-mc {
-    height: 800px;
+    height: 830px;
   }
 
   .hero-blerb {
@@ -92,6 +91,12 @@ p {
   }
   .hero-blerb,
   p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .hero-bg {
+    width: 200%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
