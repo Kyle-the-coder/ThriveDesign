@@ -1,5 +1,5 @@
 .nav-mc {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@
 .nav-mc.active {
   width: 100%;
   top: 0;
-  height: 90px;
+  height: 105px;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 0;
 }
@@ -113,6 +113,72 @@
   .dropdown-links-container {
     width: 100%;
     height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown-link-name {
+    font-size: 2.5rem;
+    font-family: "Font1", sans-serif;
+    cursor: pointer;
+    padding: 8px 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .dropdown-link-name:hover {
+    color: rgb(252, 115, 30);
+
+    text-shadow: -1px 1px 1px rgb(35, 35, 35);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .nav-links-container {
+    width: fit-content;
+  }
+
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .navbar-phone-dropdown-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.85)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 12px 32px rgba(0, 0, 0, 0.25),
+      inset -2px -2px 5px rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    overflow: hidden;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    z-index: 9;
+  }
+  .hamburger-logo-lottie-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-links-container {
+    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;

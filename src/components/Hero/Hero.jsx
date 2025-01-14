@@ -1,11 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import heroBg from "../../assets/AbstractPlay.jpg";
+import heroBgPhone from "../../assets/AbstractPlayPhone.jpg";
 import "./hero.css";
 export function Hero() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Add event listener to window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup: Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="hero-mc">
-      <img src={heroBg} className="hero-bg" />
+      {windowWidth <= 600 ? (
+        <img src={heroBgPhone} className="hero-bg" />
+      ) : (
+        <img src={heroBg} className="hero-bg" />
+      )}
 
       <div className="hero-text">
         {windowWidth <= 600 ? (

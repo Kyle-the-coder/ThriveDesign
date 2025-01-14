@@ -33,7 +33,7 @@
 h1 {
   margin: 0;
   line-height: 1;
-  font-size: clamp(3rem, 11vw, 10rem);
+  font-size: clamp(4rem, 10vw, 10rem);
 }
 
 .hero-blerb {
@@ -70,6 +70,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   .hero-text {
+    width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -86,6 +87,7 @@ p {
   }
 
   .hero-blerb {
+    width: 90%;
     text-align: center;
     padding: 30px;
   }
@@ -95,7 +97,42 @@ p {
   }
 
   .hero-bg {
-    width: 200%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-text {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+  }
+  .hero-text,
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-mc {
+    height: 830px;
+  }
+
+  .hero-blerb {
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+  }
+  .hero-blerb,
+  p {
+    font-size: 1.3rem;
+  }
+
+  .hero-bg {
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
   }
