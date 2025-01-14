@@ -75,16 +75,6 @@
     width: 70px;
     height: 70px;
   }
-  .hamburger-logo-lottie-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   .navbar-phone-dropdown-container {
     width: 100vw;
