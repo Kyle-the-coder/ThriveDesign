@@ -56,15 +56,26 @@ export function Nav() {
     }
   }, [isHamburgerActive]);
 
+  console.log(isAnimationActive);
+
   return (
     <div className="main-container">
       <div className={`nav-mc ${isHamburgerActive ? "active" : ""}`}>
-        <img src={logo} className="logo-img" />
+        <img
+          src={logo}
+          className="logo-img"
+          style={{
+            ...(isHamburgerActive && { marginLeft: "10px" }),
+          }}
+        />
         <div className="nav-links-container">
           {windowWidth <= 600 ? (
             <>
               <div
                 className="nav-hamburger-container"
+                style={{
+                  ...(isHamburgerActive && { marginRight: "10px" }),
+                }}
                 onClick={() => handleActivateHamburger()}
               >
                 <LottieAnimation

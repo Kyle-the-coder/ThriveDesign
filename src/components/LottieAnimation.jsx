@@ -12,7 +12,7 @@ function LottieAnimation({ isHamburgerActive, isAnimationActive }) {
       container: containerRef.current,
       renderer: "svg",
       loop: false,
-      autoplay: false,
+      autoplay: false, // Prevent autoplay on load
       animationData: lottieFile,
     });
     animRef.current = animation;
@@ -24,14 +24,14 @@ function LottieAnimation({ isHamburgerActive, isAnimationActive }) {
   useEffect(() => {
     if (!animRef.current) return;
 
-    const { currentFrame } = animRef.current;
-
-    if (!isAnimationActive) {
-      animRef.current.playSegments([currentFrame, 0], true); // Play reverse
-    } else if (isHamburgerActive) {
-      animRef.current.playSegments([0, 43], true); // Play forward
+    if (isAnimationActive === true) {
+      // Play forward
+      animRef.current.playSegments([0, 43], true);
+    } else if (isAnimationActive === false) {
+      // Play reverse
+      animRef.current.playSegments([43, 0], true);
     }
-  }, [isHamburgerActive, isAnimationActive]);
+  }, [isAnimationActive]);
 
   return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />;
 }
