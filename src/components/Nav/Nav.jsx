@@ -97,19 +97,21 @@ export function Nav() {
       {/* Move the dropdown here */}
       {isHamburgerActive && (
         <div className="navbar-phone-dropdown-container">
-          {links.map((link) => (
-            <div key={link.linkName}>
-              <h3
-                className="dropdown-link-name font1"
-                onClick={() => {
-                  navigate(link.link);
-                  handleActivateHamburger();
-                }}
-              >
-                {link.linkName}
-              </h3>
-            </div>
-          ))}
+          <div className="dropdown-links-container">
+            {links.map((link) => (
+              <div key={link.linkName}>
+                <h3
+                  className="dropdown-link-name blockText font1"
+                  onClick={() => {
+                    navigate(link.link);
+                    handleActivateHamburger();
+                  }}
+                >
+                  {link.linkName}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
