@@ -67,3 +67,31 @@ p {
   line-height: 1.5;
   margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+  }
+  .hero-text,
+  h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+
+  .hero-mc {
+    height: 800px;
+  }
+
+  .hero-blerb {
+    text-align: center;
+    padding: 30px;
+  }
+  .hero-blerb,
+  p {
+    font-size: 1.2rem;
+  }
+}

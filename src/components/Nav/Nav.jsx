@@ -56,8 +56,6 @@ export function Nav() {
     }
   }, [isHamburgerActive]);
 
-  console.log(isAnimationActive);
-
   return (
     <div className="main-container">
       <div className={`nav-mc ${isHamburgerActive ? "active" : ""}`}>
@@ -86,7 +84,7 @@ export function Nav() {
             </>
           ) : (
             links.map((link) => (
-              <h3 key={link.linkName} className="font1 blockText link">
+              <h3 key={link.linkName} className="font1Bold blockText link">
                 {link.linkName}
               </h3>
             ))
@@ -101,7 +99,7 @@ export function Nav() {
             {links.map((link) => (
               <div key={link.linkName}>
                 <h3
-                  className="dropdown-link-name blockText font1"
+                  className=" blockText dropdown-link-name font1"
                   onClick={() => {
                     navigate(link.link);
                     handleActivateHamburger();
