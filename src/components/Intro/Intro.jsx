@@ -9,7 +9,9 @@ export function Intro() {
         <h1 className="blockTextThick font1Bold intro-title">
           Deep Dive into a <span className="blueFont">new</span>
         </h1>
-        <h1 className="blockTextThick font1Bold">digital adventure</h1>
+        <h1 className="blockTextThick font1Bold intro-title">
+          digital adventure
+        </h1>
       </div>
       <div className="intro-photo-blerb-container">
         <img src={dive} className="intro-img" />

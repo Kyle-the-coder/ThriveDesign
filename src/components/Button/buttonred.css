@@ -3,7 +3,8 @@
   padding: 15px 30px;
   background-color: black;
   color: white;
-  font-size: clamp(1.5rem, 10vw, 2rem);
+  font-size: clamp(1.5rem, 2rem, 3rem);
+
   border-radius: 100px;
   border: none;
   cursor: pointer;

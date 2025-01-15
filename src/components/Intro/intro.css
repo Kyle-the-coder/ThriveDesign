@@ -11,27 +11,26 @@
 .intro-text {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: clamp(3rem, 9vw, 10rem);
 }
 .intro-title {
   font-size: clamp(3rem, 9vw, 7rem);
+  text-align: center;
 }
 
 .intro-photo-blerb-container {
   width: 100%;
-  height: 70%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
 .intro-img {
-  width: auto;
+  width: 40%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .intro-blerb-button-container {
-  width: 60%;
+  width: 55%;
   height: clamp(510px, 55vh - 1vw, 590px);
   display: flex;
   flex-direction: column;
