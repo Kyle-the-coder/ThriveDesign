@@ -1,11 +1,12 @@
-import { Button } from "../Button/Button";
+import { ButtonRed } from "../Button/ButtonRed";
+import { ButtonBlue } from "../Button/ButtonBlue";
 import dive from "../../assets/deepDive.jpg";
 import "./intro.css";
 export function Intro() {
   return (
     <div className="intro-mc">
       <div className="intro-text">
-        <h1 className="blockTextThick font1Bold">
+        <h1 className="blockTextThick font1Bold intro-title">
           Deep Dive into a <span className="blueFont">new</span>
         </h1>
         <h1 className="blockTextThick font1Bold">digital adventure</h1>
@@ -13,7 +14,7 @@ export function Intro() {
       <div className="intro-photo-blerb-container">
         <img src={dive} className="intro-img" />
         <div className="intro-blerb-button-container">
-          <p className="blockText font1Bold">
+          <p className="blockText font1Bold intro-blerb">
             At Thrive Design, we are dedicated to delivering the online digital
             experience your business has always envisioned. Our approach begins
             with understanding your unique goals and identifying the digital
@@ -23,7 +24,7 @@ export function Intro() {
             thrives in the real world, we ensure your website evolves alongside
             it.
           </p>
-          <Button word="Get Started" />
+          <ButtonRed word="Get Started" />
         </div>
       </div>
     </div>
