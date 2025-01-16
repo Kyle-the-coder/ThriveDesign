@@ -2,16 +2,30 @@ import { ButtonRed } from "../Button/ButtonRed";
 import { ButtonBlue } from "../Button/ButtonBlue";
 import dive from "../../assets/deepDive.jpg";
 import "./intro.css";
+import { useState } from "react";
 export function Intro() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   return (
     <div className="intro-mc">
       <div className="intro-text">
-        <h1 className="blockTextThick font1Bold intro-title">
-          Deep Dive into a <span className="blueFont">new</span>
-        </h1>
-        <h1 className="blockTextThick font1Bold intro-title">
-          digital adventure
-        </h1>
+        {windowWidth <= 600 ? (
+          <>
+            <h1 className="blockTextThick font1Bold intro-title">
+              Deep Dive into a <span className="blueFont">new </span>
+              digital adventure
+            </h1>
+          </>
+        ) : (
+          <>
+            {" "}
+            <h1 className="blockTextThick font1Bold intro-title">
+              Deep Dive into a <span className="blueFont">new</span>
+            </h1>
+            <h1 className="blockTextThick font1Bold intro-title">
+              digital adventure
+            </h1>
+          </>
+        )}
       </div>
       <div className="intro-photo-blerb-container">
         <img src={dive} className="intro-img" />
