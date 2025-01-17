@@ -60,8 +60,8 @@
   transform: translateX(-50%);
 }
 
-.hero-text > p {
-  font-size: clamp(1rem, 1.9vw, 3rem);
+.hero-blerb > p {
+  font-size: clamp(1rem, 2vw, 4rem);
   line-height: 1.5;
   margin: 0;
 }

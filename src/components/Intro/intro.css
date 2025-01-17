@@ -1,6 +1,7 @@
 .intro-mc {
   width: 100%;
   height: auto;
+  margin-bottom: 200px;
   background-color: #171717;
   display: flex;
   flex-direction: column;
@@ -21,6 +22,7 @@
 
 .intro-photo-blerb-container {
   width: 100%;
+  height: 600px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -43,7 +45,7 @@
 }
 
 .intro-blerb {
-  font-size: clamp(1.1rem, 2.1vw, 2rem);
+  font-size: clamp(1.1rem, 1.9vw, 1.8rem);
 }
 
 @media only screen and (max-width: 600px) {
@@ -54,6 +56,7 @@
   .intro-photo-blerb-container {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
   .intro-text {
     margin: 0;
