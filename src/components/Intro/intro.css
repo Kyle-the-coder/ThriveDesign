@@ -32,7 +32,7 @@
   width: 40%;
   height: 105%;
   object-fit: cover;
-  z-index: 2;
+  z-index: 3;
 }
 .intro-blerb-button-container {
   width: 55%;

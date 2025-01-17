@@ -1,4 +1,4 @@
-import servicesBg from "../../assets/servicesBg.jpg";
+import servicesBg from "../../assets/servBg.jpg";
 import pencil from "../../assets/graphic-designer.png";
 import pc from "../../assets/coding.png";
 import phone from "../../assets/learning-app.png";
