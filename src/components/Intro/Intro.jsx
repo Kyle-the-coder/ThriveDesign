@@ -31,14 +31,14 @@ export function Intro() {
         <img src={dive} className="intro-img" />
         <div className="intro-blerb-button-container">
           <p className="blockText font1Bold intro-blerb">
-            At Thrive Design, we are dedicated to delivering the online digital
-            experience your business has always envisioned. Our approach begins
-            with understanding your unique goals and identifying the digital
-            tools and features that can help propel your business forward. We
-            believe your website should be more than just a presence—it should
-            be a dynamic asset that supports your growth. As your business
-            thrives in the real world, we ensure your website evolves alongside
-            it.
+            At <span className="orangeFont">Thrive Design</span>, we are
+            dedicated to delivering the online digital experience your business
+            has always envisioned. Our approach begins with understanding your
+            unique goals and identifying the digital tools and features that can
+            help propel your business forward. We believe your website should be
+            more than just a presence—it should be a dynamic asset that supports
+            your growth. As your business thrives in the real world, we ensure
+            your website evolves alongside it.
           </p>
           <ButtonRed word="Get Started" />
         </div>
