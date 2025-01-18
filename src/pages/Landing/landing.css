@@ -6,3 +6,23 @@
   align-items: center;
   position: relative;
 }
+
+.landing-abstract-container {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: black;
+}
+
+.abstractBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  object-fit: cover;
+}

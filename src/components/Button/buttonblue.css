@@ -3,13 +3,13 @@
   padding: 15px 30px;
   background-color: black;
   color: white;
-  font-size: clamp(1rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 2rem, 3rem);
   border-radius: 100px;
   border: none;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  z-index: 0;
+  z-index: 3;
   transition: color 0.8s ease;
 }
 
