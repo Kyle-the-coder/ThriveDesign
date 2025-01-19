@@ -40,7 +40,7 @@ export function Intro() {
             your growth. As your business thrives in the real world, we ensure
             your website evolves alongside it.
           </p>
-          <ButtonRed word="Get Started" />
+          <ButtonRed word="Get Started" fontSize="clamp(1.5rem, 2rem, 3rem)" />
         </div>
       </div>
     </div>

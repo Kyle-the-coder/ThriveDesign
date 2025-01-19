@@ -21,7 +21,7 @@ export function Projects() {
           <p className="blockText font1">
             Small Restaurant website created to showcase a custom review system
           </p>
-          <ButtonBlue word="See Website" />
+          <ButtonBlue word="See Website" fontSize="clamp(1rem, 2.5vw, 3rem)" />
         </div>
 
         <div className="projects-container">
@@ -31,7 +31,7 @@ export function Projects() {
           <p className="blockText font1">
             Small Restaurant website created to showcase a custom review system
           </p>
-          <ButtonRed word="See Website" />
+          <ButtonRed word="See Website" fontSize="clamp(1rem, 2.5vw, 3rem)" />
         </div>
 
         <div className="projects-container">
@@ -41,7 +41,7 @@ export function Projects() {
           <p className="blockText font1">
             Small Restaurant website created to showcase a custom review system
           </p>
-          <ButtonBlue word="See Website" />
+          <ButtonBlue word="See Website" fontSize="clamp(1rem, 2.5vw, 3rem)" />
         </div>
 
         <div className="projects-container">
@@ -51,7 +51,7 @@ export function Projects() {
           <p className="blockText font1">
             Small Restaurant website created to showcase a custom review system
           </p>
-          <ButtonRed word="See Website" />
+          <ButtonRed word="See Website" fontSize="clamp(1rem, 2.5vw, 3rem)" />
         </div>
       </div>
     </div>

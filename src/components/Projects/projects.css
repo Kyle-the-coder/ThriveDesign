@@ -13,7 +13,19 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 10%),
+      rgb(0, 0, 0) 20%
+    ),
+    /* Top fade */ linear-gradient(to right, red, blue); /* Horizontal gradient */
+  background-size: 100% 100%, 100% 50%; /* Apply sizes for both layers */
+  background-position: 0 50%, 0 100%; /* Align both layers to the bottom */
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  overflow: hidden;
 }
+
 .projects-title > h1 {
   text-align: center;
   line-height: 210px;
@@ -29,7 +41,7 @@
 }
 
 .projects-container {
-  width: 24.5%;
+  width: 25%;
   height: 600px;
   display: flex;
   flex-direction: column;
