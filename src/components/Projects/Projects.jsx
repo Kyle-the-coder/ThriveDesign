@@ -5,8 +5,13 @@ import Poke from "../../assets/PokePortrait.png";
 import RMS from "../../assets/RMSPortrait.png";
 import { ButtonBlue } from "../Button/ButtonBlue";
 import { ButtonRed } from "../Button/ButtonRed";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export function Projects() {
+  const [hoverIndex, setHoverIndex] = useState(0);
+
+  console.log(hoverIndex);
   return (
     <div className="projects-mc">
       <div className="projects-title">
@@ -14,65 +19,65 @@ export function Projects() {
       </div>
 
       <div className="projects-display-container">
-        <div className="projects-container-1">
+        <div
+          className={`projects-container ${hoverIndex === 1 ? "active" : ""}`}
+          onMouseEnter={() => setHoverIndex(1)}
+        >
           <div className="dark-bg"></div>
           <img src={APC} className="projects-img" />
           <div className="project-info">
             <h1 className="whiteFont font1Bold">Restaurant</h1>
-            <p className="whiteFont font1Bold">
-              Small Restaurant website created to showcase a custom review
-              system
-            </p>
+
             <ButtonBlue
-              word="See Website"
+              word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
             />
           </div>
         </div>
 
-        <div className="projects-container-2">
+        <div
+          className={`projects-container ${hoverIndex === 2 ? "active" : ""}`}
+          onMouseEnter={() => setHoverIndex(2)}
+        >
           <div className="dark-bg"></div>
           <img src={RJP} className="projects-img" />
           <div className="project-info">
             <h1 className="whiteFont font1Bold">Retail</h1>
-            <p className="whiteFont font1Bold">
-              A Jewelry Store website made to showcase some advance features
-              such as stock search and attractive UI techniques
-            </p>
+
             <ButtonRed
-              word="See Website"
+              word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
             />
           </div>
         </div>
 
-        <div className="projects-container-3">
+        <div
+          className={`projects-container ${hoverIndex === 3 ? "active" : ""}`}
+          onMouseEnter={() => setHoverIndex(3)}
+        >
           <div className="dark-bg"></div>
           <img src={Poke} className="projects-img" />
           <div className="project-info">
             <h1 className="whiteFont font1Bold">Game</h1>
-            <p className="whiteFont font1Bold">
-              A Pokemon Capture Card game created to show some complex systems
-              created in React{" "}
-            </p>
+
             <ButtonBlue
-              word="See Website"
+              word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
             />
           </div>
         </div>
 
-        <div className="projects-container-4">
+        <div
+          className={`projects-container ${hoverIndex === 4 ? "active" : ""}`}
+          onMouseEnter={() => setHoverIndex(4)}
+        >
           <div className="dark-bg"></div>
           <img src={RMS} className="projects-img" />
           <div className="project-info">
             <h1 className="whiteFont font1Bold">Service</h1>
-            <p className="whiteFont font1Bold">
-              A Personal Trainer website created with a Calendar to create a
-              schedule that clients can utilize to sign up for private sessions
-            </p>
+
             <ButtonRed
-              word="See Website"
+              word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
             />
           </div>
