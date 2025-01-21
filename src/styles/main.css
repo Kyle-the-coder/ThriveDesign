@@ -34,7 +34,7 @@ body {
 .blockText {
   color: white;
   -webkit-text-stroke: 1px black;
-  text-shadow: -4px 3px 4px rgb(35, 35, 35);
+  text-shadow: -4px 3px 4px rgb(0, 0, 0);
 }
 .blockTextThick {
   color: white;

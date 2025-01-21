@@ -26,7 +26,7 @@ export function Projects() {
           <div className="dark-bg"></div>
           <img src={APC} className="projects-img" />
           <div className="project-info">
-            <h1 className="whiteFont font1Bold">Restaurant</h1>
+            <h1 className=" font1Bold blockText blueFont">Restaurants</h1>
 
             <ButtonBlue
               word="See Details"
@@ -42,7 +42,7 @@ export function Projects() {
           <div className="dark-bg"></div>
           <img src={RJP} className="projects-img" />
           <div className="project-info">
-            <h1 className="whiteFont font1Bold">Retail</h1>
+            <h1 className="orangeFont blockText font1Bold">Retail</h1>
 
             <ButtonRed
               word="See Details"
@@ -58,7 +58,7 @@ export function Projects() {
           <div className="dark-bg"></div>
           <img src={Poke} className="projects-img" />
           <div className="project-info">
-            <h1 className="whiteFont font1Bold">Game</h1>
+            <h1 className="blueFont blockText font1Bold">Games</h1>
 
             <ButtonBlue
               word="See Details"
@@ -74,7 +74,7 @@ export function Projects() {
           <div className="dark-bg"></div>
           <img src={RMS} className="projects-img" />
           <div className="project-info">
-            <h1 className="whiteFont font1Bold">Service</h1>
+            <h1 className="orangeFont blockText font1Bold">Services</h1>
 
             <ButtonRed
               word="See Details"

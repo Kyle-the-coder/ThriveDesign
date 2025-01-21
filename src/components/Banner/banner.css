@@ -8,7 +8,7 @@
   background: linear-gradient(#f05d49 0%, #57a4f2 100%);
   overflow-x: hidden;
   z-index: 3;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 .banner-line {
@@ -49,10 +49,12 @@
   .banner-img {
     margin-left: 10px;
     margin-right: 10px;
+    width: 80px;
+    height: 80px;
   }
 
   .banner-mc {
-    height: 250px;
+    height: 200px;
   }
 }
 
