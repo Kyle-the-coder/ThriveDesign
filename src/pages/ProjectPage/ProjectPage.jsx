@@ -1,4 +1,4 @@
-import "./proojectpage.css";
+import "./projectpage.css";
 function ProjectPage() {
   return (
     <div className="project-page-mc">

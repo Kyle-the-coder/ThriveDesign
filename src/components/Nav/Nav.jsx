@@ -3,17 +3,19 @@ import logo from "../../assets/THRIVELogo.png";
 import LottieAnimation from "../LottieAnimation";
 import gsap from "gsap";
 import "./nav.css";
+import { useNavigate } from "react-router-dom";
 export function Nav() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   //Phone States
   const [isHamburgerActive, setIsHamburgerActive] = useState(null);
   const [isAnimationActive, setIsAnimtionActive] = useState(null);
+  const navigate = useNavigate();
 
   const links = [
-    { linkName: "About Me", link: "/aboutme" },
+    { linkName: "About Me", link: "/about" },
     { linkName: "Projects", link: "/projects" },
-    { linkName: "Services", link: "/services" },
-    { linkName: "Contact", link: "/contact" },
+    { linkName: "Services", link: "" },
+    { linkName: "Contact", link: "" },
   ];
 
   function handleActivateHamburger() {
@@ -84,7 +86,11 @@ export function Nav() {
             </>
           ) : (
             links.map((link) => (
-              <h3 key={link.linkName} className="font1Bold blockText link">
+              <h3
+                key={link.linkName}
+                className="font1Bold blockText link"
+                onClick={() => navigate(link.link)}
+              >
                 {link.linkName}
               </h3>
             ))
