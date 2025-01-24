@@ -1,8 +1,9 @@
+import { Title } from "../../components/Title/Title";
 import "./projectpage.css";
 function ProjectPage() {
   return (
     <div className="project-page-mc">
-      <h1 className="font1Bold blockText">This is project page</h1>
+      <Title title="Projects" />
     </div>
   );
 }
