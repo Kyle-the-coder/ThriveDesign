@@ -53,3 +53,7 @@ body {
 .whiteFont {
   color: white;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
