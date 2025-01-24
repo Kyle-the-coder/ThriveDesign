@@ -29,7 +29,7 @@
 }
 
 .contact-img {
-  width: 25%;
+  width: clamp(40px, 25%, 400px);
   height: auto;
   border-radius: 100%;
 }

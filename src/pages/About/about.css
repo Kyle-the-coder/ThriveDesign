@@ -8,7 +8,7 @@
 
 .about-info-container {
   width: 100%;
-  height: 900px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,6 @@
   width: 45%;
   height: 80%;
   display: flex;
-  background-color: rgb(45, 93, 93);
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
@@ -28,7 +27,7 @@
 .about-info > p {
   text-align: center;
   color: white;
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 2.4vw, 2.5rem);
 }
 
 .about-img-container {
@@ -37,9 +36,68 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+  position: relative;
 }
 
 .about-img {
+  width: 500px;
+  z-index: 1;
+}
+
+.orange-tri {
+  width: 500px;
+  height: 300px;
+  clip-path: polygon(100% 23%, 0% 100%, 90% 95%);
+  background-color: #f05d49;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.blue-tri {
+  width: 520px;
+  height: 600px;
+  clip-path: polygon(10% 84%, 0 21%, 100% 96%);
+  background-color: #57a4f2;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.arrow {
+  width: 400px;
+  height: 50%;
+  clip-path: polygon(
+    4% 59%,
+    53% 37%,
+    47% 26%,
+    70% 34%,
+    63% 58%,
+    57% 46%,
+    8% 67%
+  );
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(3%) rotate(-12deg);
+}
+
+.about-contact-container {
   width: 100%;
+  height: 450px;
+  background-color: #57a4f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-contact-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
