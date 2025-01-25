@@ -1,4 +1,4 @@
-import "./projects.css";
+import "./projectsection.css";
 import APC from "../../assets/APCPortrait.png";
 import RJP from "../../assets/RJPPortrait.png";
 import Poke from "../../assets/PokePortrait.png";
@@ -8,7 +8,7 @@ import { ButtonRed } from "../Button/ButtonRed";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export function Projects() {
+export function ProjectSection() {
   const [hoverIndex, setHoverIndex] = useState(0);
 
   return (
