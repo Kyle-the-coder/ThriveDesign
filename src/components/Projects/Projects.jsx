@@ -11,7 +11,6 @@ import { useEffect } from "react";
 export function Projects() {
   const [hoverIndex, setHoverIndex] = useState(0);
 
-  console.log(hoverIndex);
   return (
     <div className="projects-mc">
       <div className="projects-title">

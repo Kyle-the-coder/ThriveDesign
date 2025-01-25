@@ -39,6 +39,7 @@
   width: clamp(30px, 8vw, 90px);
   height: clamp(30px, 8vw, 90px);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav-links-container {

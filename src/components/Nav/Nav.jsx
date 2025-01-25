@@ -64,6 +64,10 @@ export function Nav() {
         <img
           src={logo}
           className="logo-img"
+          onClick={() => {
+            navigate("/");
+            isHamburgerActive && handleActivateHamburger();
+          }}
           style={{
             ...(isHamburgerActive && { marginLeft: "10px" }),
           }}
