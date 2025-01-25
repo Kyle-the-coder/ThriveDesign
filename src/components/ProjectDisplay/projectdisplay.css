@@ -1,0 +1,9 @@
+.project-display-mc {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #171717;
+}

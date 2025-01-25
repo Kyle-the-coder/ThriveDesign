@@ -5,3 +5,21 @@
   justify-content: center;
   align-items: center;
 }
+
+.project-contact-container {
+  width: 100%;
+  height: 450px;
+  background-color: #57a4f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.project-contact-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
