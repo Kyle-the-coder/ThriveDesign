@@ -64,3 +64,16 @@
   margin-bottom: 5%;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .display-content {
+    flex-direction: column;
+  }
+  .display-vid-container {
+    width: 100%;
+  }
+
+  .display-info {
+    width: 100%;
+  }
+}
