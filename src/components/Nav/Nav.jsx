@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../../assets/THRIVELogo.png";
 import LottieAnimation from "../LottieAnimation";
 import gsap from "gsap";
+import { scrollToSection } from "../SmoothScroll";
 import "./nav.css";
 import { useNavigate } from "react-router-dom";
 export function Nav() {
@@ -35,20 +36,10 @@ export function Nav() {
     }
   }
 
-  function scrollToSection(link) {
-    const target = document.querySelector(link);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
   function handleScrollTo(link) {
     if (link.startsWith("#")) {
       if (link === "#contact") {
-        const target = document.querySelector(link);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
+        scrollToSection(link);
       } else if (location.pathname !== "/") {
         navigate("/");
         if (isHamburgerActive) {

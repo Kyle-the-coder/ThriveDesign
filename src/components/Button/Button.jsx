@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { scrollToSection } from "../SmoothScroll";
 import "./button.css";
 export function Button({ word, fontSize, color, nav, web, id }) {
   const navigate = useNavigate();
@@ -9,18 +10,11 @@ export function Button({ word, fontSize, color, nav, web, id }) {
       navigate("/projects");
 
       setTimeout(() => {
-        scrollToSection(id);
+        scrollToSection(`#${id}`);
       }, 400);
     }
   }
 
-  function scrollToSection(id) {
-    const target = document.querySelector(`#${id}`);
-
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  }
   return (
     <>
       {web ? (

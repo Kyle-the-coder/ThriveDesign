@@ -59,7 +59,7 @@
 
 .link:hover {
   color: rgb(252, 115, 30);
-  text-shadow: -1px 1px 1px rgb(35, 35, 35);
+  filter: drop-shadow(-1px 1px 1px rgb(35, 35, 35));
 }
 
 .nav-hamburger-container {
