@@ -11,7 +11,7 @@ export function Button({ word, fontSize, color, nav, web, id }) {
 
       setTimeout(() => {
         scrollToSection(`#${id}`);
-      }, 400);
+      }, 800);
     }
   }
 

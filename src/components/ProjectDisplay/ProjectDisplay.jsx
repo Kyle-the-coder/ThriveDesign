@@ -10,7 +10,17 @@ export function ProjectDisplay({ title, desc, vid, web }) {
         </div>
         <div className="display-content">
           <div className="display-vid-container">
-            <video controls src={vid} className="display-vid" />
+            <video
+              controls
+              src={vid}
+              className="display-vid"
+              muted
+              playsInline
+              preload="auto"
+              style={{ backgroundColor: "black" }}
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div className="display-info">
             <p className="font1Bold">{desc}</p>
