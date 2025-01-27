@@ -56,6 +56,10 @@ export function Nav() {
           setTimeout(() => {
             scrollToSection(link);
           }, 2000);
+        } else if (!isHamburgerActive) {
+          setTimeout(() => {
+            scrollToSection(link);
+          }, 500);
         }
       } else {
         scrollToSection(link);
