@@ -51,10 +51,12 @@ export function Nav() {
         }
       } else if (location.pathname !== "/") {
         navigate("/");
-
-        setTimeout(() => {
-          scrollToSection(link);
-        }, 100);
+        if (isHamburgerActive) {
+          handleActivateHamburger();
+          setTimeout(() => {
+            scrollToSection(link);
+          }, 2000);
+        }
       } else {
         scrollToSection(link);
       }
