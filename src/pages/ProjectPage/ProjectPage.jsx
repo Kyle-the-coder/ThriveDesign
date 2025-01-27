@@ -11,43 +11,53 @@ function ProjectPage() {
   return (
     <div className="project-page-mc">
       <Title title="Projects" />
+      <div id="service">
+        <ProjectDisplay
+          title="Service"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        Nisi ut aliquip ex ea commodo consequat."
+          vid={serviceVid}
+          web="https://renewedmobilitysolutions.web.app/"
+        />
+      </div>
 
-      <ProjectDisplay
-        title="Service"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <div id="retail">
+        <ProjectDisplay
+          title="Retail"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
         Nisi ut aliquip ex ea commodo consequat."
-        vid={serviceVid}
-        web="https://renewedmobilitysolutions.web.app/"
-      />
-      <ProjectDisplay
-        title="Retail"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          vid={jewelVid}
+          web="https://jewelrystore-c8dfc.web.app/"
+        />
+      </div>
+
+      <div id="games">
+        <ProjectDisplay
+          title="Game"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
         Nisi ut aliquip ex ea commodo consequat."
-        vid={jewelVid}
-        web="https://jewelrystore-c8dfc.web.app/"
-      />
-      <ProjectDisplay
-        title="Game"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          vid={pokeVid}
+          web="https://pokemonstay-5cade.web.app/"
+        />
+      </div>
+
+      <div id="restaurant">
+        <ProjectDisplay
+          title="Restaurant"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
         Nisi ut aliquip ex ea commodo consequat."
-        vid={pokeVid}
-        web="https://pokemonstay-5cade.web.app/"
-      />
-      <ProjectDisplay
-        title="Restaurant"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-        Nisi ut aliquip ex ea commodo consequat."
-        vid={appleVid}
-        web="https://restuarantsite.web.app/"
-      />
+          vid={appleVid}
+          web="https://restuarantsite.web.app/"
+        />
+      </div>
 
       <div className="project-contact-container">
         <img src={contactBg} className="project-contact-bg" />

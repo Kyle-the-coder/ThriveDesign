@@ -30,7 +30,7 @@ export function ProjectSection() {
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
               color="button-blue"
-              nav="/projects"
+              id="restaurant"
             />
           </div>
         </div>
@@ -48,7 +48,7 @@ export function ProjectSection() {
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
               color="button-red"
-              nav="/projects"
+              id="retail"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export function ProjectSection() {
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
               color="button-blue"
-              nav="/projects"
+              id="games"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ export function ProjectSection() {
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
               color="button-red"
-              nav="/projects"
+              id="service"
             />
           </div>
         </div>

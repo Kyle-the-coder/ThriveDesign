@@ -4,7 +4,7 @@ import insta from "../../assets/insta.png";
 import "./contact.css";
 export function Contact() {
   return (
-    <div className="contact-mc">
+    <div className="contact-mc" id="contact">
       <div className="contact-info">
         <h1 className=" font1Bold blockText">Contact:</h1>
         <h3 className="blockText font1Bold">Email: thrivedesign@gmail.com</h3>

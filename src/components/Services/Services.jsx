@@ -6,7 +6,7 @@ import "./services.css";
 
 export function Services() {
   return (
-    <div className="services-mc">
+    <div className="services-mc" id="services">
       <img src={servicesBg} className="services-bg" />
       <div className="bg-vignette"></div>
       <div className="services-title">

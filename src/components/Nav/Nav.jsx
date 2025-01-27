@@ -14,8 +14,8 @@ export function Nav() {
   const links = [
     { linkName: "About Me", link: "/about" },
     { linkName: "Projects", link: "/projects" },
-    { linkName: "Services", link: "" },
-    { linkName: "Contact", link: "" },
+    { linkName: "Services", link: "#services" },
+    { linkName: "Contact", link: "#contact" },
   ];
 
   function handleActivateHamburger() {
@@ -33,6 +33,35 @@ export function Nav() {
         },
       });
     }
+  }
+
+  function scrollToSection(link) {
+    const target = document.querySelector(link);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function handleScrollTo(link) {
+    if (link.startsWith("#")) {
+      if (link === "#contact") {
+        const target = document.querySelector(link);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.pathname !== "/") {
+        navigate("/");
+
+        setTimeout(() => {
+          scrollToSection(link);
+        }, 100);
+      } else {
+        scrollToSection(link);
+      }
+    } else {
+      navigate(link);
+    }
+    if (isHamburgerActive) handleActivateHamburger();
   }
 
   useEffect(() => {
@@ -93,7 +122,7 @@ export function Nav() {
               <h3
                 key={link.linkName}
                 className="font1Bold blockText link"
-                onClick={() => navigate(link.link)}
+                onClick={() => handleScrollTo(link.link)}
               >
                 {link.linkName}
               </h3>
@@ -110,10 +139,7 @@ export function Nav() {
               <div key={link.linkName}>
                 <h3
                   className=" blockText dropdown-link-name font1"
-                  onClick={() => {
-                    navigate(link.link);
-                    handleActivateHamburger();
-                  }}
+                  onClick={() => handleScrollTo(link.link)}
                 >
                   {link.linkName}
                 </h3>
