@@ -1,7 +1,7 @@
 import appleVid from "../../assets/AppleVid.mp4";
-import { ButtonRed } from "../Button/ButtonRed";
+import { Button } from "../Button/Button";
 import "./projectdisplay.css";
-export function ProjectDisplay({ title, desc, vid }) {
+export function ProjectDisplay({ title, desc, vid, web }) {
   return (
     <div className="project-display-mc">
       <div className="display-container">
@@ -14,9 +14,11 @@ export function ProjectDisplay({ title, desc, vid }) {
           </div>
           <div className="display-info">
             <p className="font1Bold">{desc}</p>
-            <ButtonRed
+            <Button
               word="See Website"
               fontSize="clamp(.8rem, 1vw, 1.8rem)"
+              color="button-red"
+              web={web}
             />
           </div>
         </div>

@@ -1,0 +1,115 @@
+.button-red {
+  width: fit-content;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transition: color 0.8s ease; /* Smooth transition for text color */
+}
+
+.button-red::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background: linear-gradient(45deg, #f6ac70, #a32729);
+  z-index: -1;
+  border-radius: inherit;
+  transition: background 0.8s ease;
+}
+
+.button-red::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: black;
+  z-index: -1;
+  border-radius: inherit;
+  box-shadow: inset -1px 2px 10px #f05d49;
+  transition: box-shadow 0.8s ease, background 0.8s ease;
+}
+
+.button-red:hover {
+  color: #f6ac70;
+}
+
+.button-red:hover::before {
+  background: linear-gradient(45deg, #f05d49, #f6ac70);
+}
+
+.button-red:hover::after {
+  box-shadow: none;
+}
+
+.button-blue {
+  width: fit-content;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transition: color 0.8s ease;
+}
+
+.button-blue::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background: linear-gradient(45deg, #86d4d8, #4a5cfa);
+  z-index: -1;
+  border-radius: inherit;
+  transition: background 0.8s ease;
+}
+
+.button-blue::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: black;
+  z-index: -1;
+  border-radius: inherit;
+  box-shadow: inset -1px 2px 10px #57a4f2;
+  transition: box-shadow 0.8s ease, background 0.8s ease;
+}
+
+/* Hover Effects */
+.button-blue:hover {
+  color: #57a4f2;
+}
+
+.button-blue:hover::before {
+  background: linear-gradient(45deg, #4a5cfa, #86d4d8);
+}
+
+.button-blue:hover::after {
+  box-shadow: none;
+}
+
+.a-button {
+  text-decoration: none;
+  color: white;
+}
+
+.a-button:hover {
+  color: #f6ac70;
+}

@@ -3,8 +3,7 @@ import APC from "../../assets/APCPortrait.png";
 import RJP from "../../assets/RJPPortrait.png";
 import Poke from "../../assets/PokePortrait.png";
 import RMS from "../../assets/RMSPortrait.png";
-import { ButtonBlue } from "../Button/ButtonBlue";
-import { ButtonRed } from "../Button/ButtonRed";
+import { Button } from "../Button/Button";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -27,9 +26,11 @@ export function ProjectSection() {
           <div className="project-info">
             <h1 className=" font1Bold blockText blueFont">Restaurants</h1>
 
-            <ButtonBlue
+            <Button
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
+              color="button-blue"
+              nav="/projects"
             />
           </div>
         </div>
@@ -43,9 +44,11 @@ export function ProjectSection() {
           <div className="project-info">
             <h1 className="orangeFont blockText font1Bold">Retail</h1>
 
-            <ButtonRed
+            <Button
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
+              color="button-red"
+              nav="/projects"
             />
           </div>
         </div>
@@ -59,9 +62,11 @@ export function ProjectSection() {
           <div className="project-info">
             <h1 className="blueFont blockText font1Bold">Games</h1>
 
-            <ButtonBlue
+            <Button
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
+              color="button-blue"
+              nav="/projects"
             />
           </div>
         </div>
@@ -75,9 +80,11 @@ export function ProjectSection() {
           <div className="project-info">
             <h1 className="orangeFont blockText font1Bold">Services</h1>
 
-            <ButtonRed
+            <Button
               word="See Details"
               fontSize="clamp(1rem, 2.5vw, 2.5rem)"
+              color="button-red"
+              nav="/projects"
             />
           </div>
         </div>

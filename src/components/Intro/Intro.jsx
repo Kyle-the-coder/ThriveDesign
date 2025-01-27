@@ -1,8 +1,8 @@
-import { ButtonRed } from "../Button/ButtonRed";
-import { ButtonBlue } from "../Button/ButtonBlue";
+import { Button } from "../Button/Button";
+import { useState } from "react";
 import dive from "../../assets/deepDive.jpg";
 import "./intro.css";
-import { useState } from "react";
+
 export function Intro() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   return (
@@ -40,7 +40,11 @@ export function Intro() {
             your growth. As your business thrives in the real world, we ensure
             your website evolves alongside it.
           </p>
-          <ButtonRed word="Get Started" fontSize="clamp(1.5rem, 2rem, 3rem)" />
+          <Button
+            word="Get Started"
+            fontSize="clamp(1.5rem, 2rem, 3rem)"
+            color="button-red"
+          />
         </div>
       </div>
     </div>

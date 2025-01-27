@@ -12,20 +12,13 @@ function ProjectPage() {
       <Title title="Projects" />
 
       <ProjectDisplay
-        title="Restaurant"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-        Nisi ut aliquip ex ea commodo consequat."
-        vid={appleVid}
-      />
-      <ProjectDisplay
         title="Service"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
         Nisi ut aliquip ex ea commodo consequat."
         vid={serviceVid}
+        web="https://renewedmobilitysolutions.web.app/"
       />
       <ProjectDisplay
         title="Retail"
@@ -34,6 +27,16 @@ function ProjectPage() {
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
         Nisi ut aliquip ex ea commodo consequat."
         vid={jewelVid}
+        web="https://jewelrystore-c8dfc.web.app/"
+      />
+      <ProjectDisplay
+        title="Restaurant"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        Nisi ut aliquip ex ea commodo consequat."
+        vid={appleVid}
+        web="https://restuarantsite.web.app/"
       />
 
       <div className="project-contact-container">
