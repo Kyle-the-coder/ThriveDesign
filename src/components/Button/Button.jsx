@@ -4,18 +4,26 @@ export function Button({ word, fontSize, color, nav, web }) {
   const navigate = useNavigate();
 
   return (
-    <button
-      onClick={() => navigate(nav)}
-      className={` font1Bold ${color}`}
-      style={{ fontSize: fontSize }}
-    >
+    <>
       {web ? (
-        <a href={web} target="_blank" className="a-button">
-          {word}
+        <a href={web} target="_blank">
+          {" "}
+          <button
+            className={` font1Bold ${color}`}
+            style={{ fontSize: fontSize }}
+          >
+            {word}
+          </button>
         </a>
       ) : (
-        word
+        <button
+          onClick={() => navigate(nav)}
+          className={` font1Bold ${color}`}
+          style={{ fontSize: fontSize }}
+        >
+          {word}
+        </button>
       )}
-    </button>
+    </>
   );
 }
