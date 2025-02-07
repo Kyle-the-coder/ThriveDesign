@@ -1,6 +1,6 @@
 // Smooth scroll function
 export function smoothScrollTo(target) {
-  const scrollDuration = 1800; // Duration in ms
+  const scrollDuration = 800; // Duration in ms
   const easing = "easeInOutCubic"; // Easing function (you can experiment with others)
 
   let start = window.scrollY || window.pageYOffset;
